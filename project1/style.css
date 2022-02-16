@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Helvetica, Arial, sans-serif;
+    border-collapse: collapse;
 }
 body{
     background: #fafafa;
@@ -35,6 +36,7 @@ nav > div {
     justify-content: flex-start;
     align-items: center;
     padding-left: 30px;
+    cursor: pointer;
 }
 
 #search-cont {
@@ -157,6 +159,7 @@ main{
 }
 #posts{
     width: inherit;
+    background: white;
 }
 #posts section{
     margin-top: 20px;
@@ -184,6 +187,7 @@ main{
     margin-right: 20px;
     outline: 3px solid #74DB41;
     outline-offset: 1px;
+    cursor: pointer;
 }
 .left span{
     font-weight: bolder;
@@ -220,6 +224,7 @@ main{
 .left-options img, .right-options img{
     width: 25px;
     height: 25px;
+    cursor: pointer;
 }
 .right-options{
     padding-right: 20px;
@@ -239,10 +244,35 @@ main{
     margin: 5px 0;
     color: #8f8f8f;
     font-size: .9rem;
+    cursor: pointer;
+}
+
+.emoji img{
+    width: 20px;
+    display: pointer;
 }
 .comment-input{
+    margin-top: 20px;
     width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    border-top: 1px solid #dfdfdf;
+    height: 50px;
 }
-.comment-input-text{
+.comment-input-text, .comment-input-text input, .comment-input-text input:focus {
     width: 400px;
+    border: 0;
+    font-size: 1rem;
+    outline: 0;
+}
+.emoji, .comment-input-text, .comment-submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.comment-submit {
+    color: rgb(9,149,246)
 }
