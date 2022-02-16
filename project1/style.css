@@ -107,6 +107,7 @@ nav > div {
     width: 30px;
     height: 30px;
     object-fit: cover;
+    cursor: pointer;
 }
 #icons li:first-child img {
     width: 40px;
@@ -135,6 +136,7 @@ main{
 .story, .story img{
     width: 55px;
     height: 55px;
+    cursor: pointer;
 }
 #center{
     margin: 0 auto;
@@ -180,6 +182,8 @@ main{
     border-radius:50%;
     object-fit: cover;
     margin-right: 20px;
+    outline: 3px solid #74DB41;
+    outline-offset: 1px;
 }
 .left span{
     font-weight: bolder;
@@ -199,4 +203,24 @@ main{
     height: 3px;
     border-radius: 50%;
     background-color: rgb(38,38,38) ;
+}
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-options{
+    padding-left: 20px;
+    width: 120px;
+    display: flex;
+    justify-content:space-between;
+    height: 50px;
+    align-items:center;
+}
+.left-options img, .right-options img{
+    width: 25px;
+    height: 25px;
+}
+.right-options{
+    padding-right: 20px;
 }
