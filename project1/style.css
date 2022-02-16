@@ -124,6 +124,7 @@ main{
 }
 
 #story{
+    margin-top: 20px;
     width: inherit;
     height: 125px;
     border: 1px solid rgb(200, 200, 200);
@@ -143,6 +144,7 @@ main{
 #center{
     margin: 0 auto;
     max-width: 1000px;
+    display: flex;
 }
 .story img{
     border-radius: 50%;
@@ -275,4 +277,10 @@ main{
 }
 .comment-submit {
     color: rgb(9,149,246)
+}
+aside{
+    padding-left: 60px;
+    padding-top: 65px;
+    height: 50px;
+    width: 200px;
 }
