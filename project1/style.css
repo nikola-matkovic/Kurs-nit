@@ -65,9 +65,11 @@ nav > div {
 #search:focus {
     padding-left: 20px;
 }
-#search:focus + #search-icon,
-#search:focus + #search-icon + #x {
+#search:focus + #search-icon{
     display: none;
+}
+#search:focus + #search-icon + #x {
+    visibility: visible;
 }
 #x {
     width: 15px;
@@ -81,6 +83,7 @@ nav > div {
     position: absolute;
     right: 40px;
     font-size: 1rem;
+    visibility: hidden;
 }
 #icons {
     display: flex;
@@ -141,4 +144,59 @@ main{
     border-radius: 50%;
     outline: 3px solid #74DB41;
     outline-offset: 1px;
+}
+.story span{
+    font-size: 0.7rem;
+    display: block;
+    margin-top: 5px;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+}
+#posts{
+    width: inherit;
+}
+#posts section{
+    margin-top: 20px;
+    width: inherit;
+    border: 1px solid rgb(200, 200, 200);
+}
+.vrh{
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    padding-left: 20px;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.left img{
+    width: 40px;
+    height: 40px;
+    border-radius:50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+.left span{
+    font-weight: bolder;
+    font-size: 0.9rem;
+}
+.media img{
+    width: 100%;
+}
+#right {
+    width: 25px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 20px;
+}
+#right div{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: rgb(38,38,38) ;
 }
