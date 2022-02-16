@@ -201,7 +201,28 @@ main{
     font-weight: bolder;
     font-size: 0.9rem;
 }
+.media{
+    display: flex;
+    overflow: hidden;
+}
+.animation-left{
+    animation-name: left;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes left {
+    from{
+        transform: translate(100%);
+    }
+    to{
+        transform: translate(0);
+    }
+}
 .media img{
+    top: 0;
+    left: 0;
     width: 100%;
 }
 #right {
