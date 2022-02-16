@@ -9,7 +9,13 @@
     border-collapse: collapse;
 }
 body{
+    height: auto;
     background: #fafafa;
+}
+nav{
+    position: sticky;
+    top: 0px;
+    background-color: white;
 }
 nav,
 #navcont {
@@ -280,7 +286,100 @@ main{
 }
 aside{
     padding-left: 60px;
-    padding-top: 65px;
-    height: 50px;
-    width: 200px;
+    padding-top: 55px;
+    min-width: 370px;
+    position: sticky;
+    top: 80px;
+    height: 500px;
+    z-index: 2;
+}
+#my-profile, .suggesion{
+    width: 100%;
+    display: flex;
+    justify-content:  space-between;
+}
+#propic img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    outline: 2px solid rgb(207, 207, 207);
+    outline-offset: 2px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#name{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#username{
+    font-weight:bold;
+    font-size: .9rem;
+    cursor: pointer;
+}
+#change, .follow{
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: rgb(9,149,246);
+    cursor: pointer;
+}
+#realname{
+    cursor: pointer;
+    color: #8e9e8e;
+}
+#suggestion{
+    display: flex;
+    justify-content:  space-between;
+    margin-top: 10px;
+    font-size: .9rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+#suggestion span:first-child{
+    color: #8e9e8e
+}
+#suggestion span:last-child{
+    font-size: .8rem;
+    cursor: pointer;
+}
+.suggesion{
+    margin-top: 20px;
+}
+ .suggesion img{
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    outline: 2px solid rgb(210,52,139);
+    outline-offset: 2px;
+
+}
+.suggestion-name{
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+footer{
+    margin-top: 20px;
+    font-size: .75rem;
+    color: #8e9e8e;
+    max-width: 330px;
+    font-weight: 300;
+}
+footer span {
+    margin-right: 10px;
+    cursor: pointer;
+    line-height: 1.5rem;
+}
+footer div{
+    margin-top: 10px;
 }
