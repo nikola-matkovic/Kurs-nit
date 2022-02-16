@@ -7,6 +7,9 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
         Helvetica, Arial, sans-serif;
 }
+body{
+    background: #fafafa;
+}
 nav,
 #navcont {
     width: 100%;
@@ -110,11 +113,32 @@ nav > div {
     border-radius: 50%;
 }
 main{
-    width: 500px;
+    width: 540px;
+    padding-left: 30px;
 }
 
 #story{
     width: inherit;
-    height: 150px;
+    height: 125px;
     border: 1px solid rgb(200, 200, 200);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+}
+.story{
+    margin: 8px;
+}
+.story, .story img{
+    width: 55px;
+    height: 55px;
+}
+#center{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.story img{
+    border-radius: 50%;
+    outline: 3px solid #74DB41;
+    outline-offset: 1px;
 }
