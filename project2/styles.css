@@ -63,7 +63,6 @@ main{
     width: 1000px;
     height: 600px;
     margin: 0 auto;
-    background: red;
     display: flex;
     border-radius: 10px;
     overflow: hidden;
