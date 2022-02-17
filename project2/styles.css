@@ -269,3 +269,33 @@ footer li:hover .box{
     display: block;
     opacity: 1;
 }
+#left span{
+    position: relative;
+}
+#left span .box{
+    left: 125px;
+}
+#left span .box img{
+    margin-right: 20px;
+    border-radius: 50%;
+}
+#left span:hover .box{
+    display: block;
+    opacity: 1;
+}
+#left span:hover .box div{
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+    transition: all .3s;
+}
+#left span:hover .box div:first-child{
+    margin-top: 10px;
+}
+#left span:hover .box div:last-child{
+    margin-bottom: 10px;
+}
+.box  img{
+    width: 20px;
+    height: 20px;
+}
