@@ -63,6 +63,7 @@ main{
     width: 1000px;
     height: 600px;
     margin: 0 auto;
+    background: red;
     display: flex;
     border-radius: 10px;
     overflow: hidden;
@@ -171,15 +172,7 @@ aside svg{
     fill: white;
     margin-right: 5px;
 }
-bod
-#footer {
-    position: absolute;
-    bottom: 0;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:center;
-}
+
 #footer ul{
     display:flex;
     justify-content: flex-start;
@@ -191,6 +184,7 @@ bod
     font-size: .9rem;
     cursor: pointer;
     transition: all .3s;
+    position: relative;
 }
 #footer ul li:hover{
     color:#F59BEC;
@@ -223,4 +217,55 @@ bod
     border-radius: 50%;
     line-height: 50px;
     text-align: center;
+}
+.box{
+    position: absolute;
+    bottom: 25px;
+    background:white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgb(0 0 0 / 15%);
+    color: black;
+    opacity: 0;
+    display: none;
+}
+.box:not(#first){
+    transform: translate(-50%);
+    left: 25px;
+}
+.box::after{
+    position:absolute;
+    content: '';
+    border: 10px solid white;
+    border-color: transparent transparent transparent white;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 20px) rotate(90deg);
+    z-index: 3;
+}
+#first::after{
+    left: 25%;
+}
+.box div{
+    padding: 10px 20px;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+}
+.box div:first-child{
+   border-radius: 10px 10px 0 0;
+}
+.box div:last-child{
+    border-radius:0 0 10px 10px;
+ }
+.box div:hover{
+    padding-top: 10px;
+    padding-left: 20px;
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+    background: rgb(240, 240, 245);
+}
+footer li:hover .box{
+    display: block;
+    opacity: 1;
 }
