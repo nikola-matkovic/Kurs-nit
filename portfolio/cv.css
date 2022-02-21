@@ -1,0 +1,108 @@
+:root{
+    --header : 250px;
+    --color1 : #2c3d4d;
+}
+*, *::after, *::before{ 
+    padding: 0;
+    margin: 0;
+}
+header{
+    width: 100%;
+    height: var(--header);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f3f3f3;
+    color: var(--color1);
+}
+header img{
+    width: 200px;
+    aspect-ratio: 1;
+    outline: 2px solid #ccc;
+    outline-offset: 2px;
+    object-fit: cover;
+    border-radius: 50%;;
+}
+header h1{
+    font-weight: 700;
+    font-size: 5rem;
+}
+header h3{
+    font-weight: 500;
+    font-size: 3rem;
+}
+aside, main{
+    display: inline-flex;
+}
+aside{
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+aside h3{
+    background-color: var(--color1);
+    color: white;
+    font-size: 2rem;
+    padding: 1rem 7rem;
+    position: relative;
+    overflow: hidden;
+    width: 400px;
+    text-align: center;
+}
+aside hr{
+    margin-top: 2.5rem;
+    height: 3px !important;
+    width: 75%;
+    background-color: #3899d8;
+}
+aside h3#content{
+    margin-top: 50px;
+    color: 
+}
+aside h3::after, aside h3:before{
+    content: "";
+    height: 200px;
+    width: 100px;
+    position: absolute;
+    background: white;
+    transform: rotate(30deg);
+}
+aside h3::after{
+    top: 0;
+    right: -35px;
+}
+aside h3::before{
+    top: -50px;
+    left: -75px;
+}
+.about{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about span{
+    margin-top: .7rem;
+    font-size: 1.1rem;
+}
+.about span:first-child{
+    display: block;
+    font-weight: 700;
+    width: 40%;
+}
+.about span:last-child{
+    display: block;
+    width: 60%;
+}
+.about img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+a{
+    text-decoration: none;
+}
+main{
+    width: 70vh;
+}
