@@ -57,8 +57,7 @@ aside hr{
     background-color: #3899d8;
 }
 aside h3#content{
-    margin-top: 50px;
-    color: 
+    margin-top: 30px;
 }
 aside h3::after, aside h3:before{
     content: "";
