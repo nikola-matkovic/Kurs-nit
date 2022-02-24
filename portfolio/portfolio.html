@@ -32,6 +32,9 @@
             display: flex;
             justify-content: space-evenly;
         }
+        a, a:hover{
+            text-decoration: none;
+        }
         h1{
             text-align: center;
         }
@@ -40,15 +43,23 @@
         }
         li{
             display: inline;
+            padding: 20px;
         }
         section{
             min-height: 400px;
+        }
+        ul img{
+            width: 50px;
+            aspect-ratio: 1;
         }
     </style>
 </head>
 <body>
     <nav>
         <ul>
+            <div>
+                <img src="gmail.png" alt="">
+            </div>
             <li><a href="#home"> Home</a></li>
             <li> <a href="#about">About me </a></li>
             <li> <a href="#projects">Projects </a> </li>
