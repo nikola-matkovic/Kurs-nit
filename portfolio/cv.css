@@ -138,9 +138,43 @@ main{
     align-items: center;
     font-size: 2.5rem;
     font-weight: 8  00;
+    transform: rotate(45deg);
 }
 
-#skils > div:nth-child(2) > div{
-    border-color:  var(--color2) transparent  transparent  transparent;
-    transform: rotate(45deg);
+#skils > div:nth-child(5) > div{
+    border-color:  var(--color2) var(--color2)  var(--color2)  transparent;
+}
+#skils > div:nth-child(5) > div > div{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: var(--sirina1);
+    height: var(--sirina1);
+    border: 20px solid  gray;
+    border-radius: 50%;
+    border-color: transparent transparent transparent gray;
+    transform: rotate(-64deg);
+}
+#skils p{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;;
+}
+#skils > div:nth-child(4) > div{
+    border-color:  var(--color2) var(--color2)  var(--color2)  transparent;
+}
+#skils > div:nth-child(4) > div > div{
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: var(--sirina1);
+    height: var(--sirina1);
+    border: 20px solid  gray;
+    border-radius: 50%;
+    border-color: transparent transparent transparent gray;
+    transform: rotate(-64deg);
 }
