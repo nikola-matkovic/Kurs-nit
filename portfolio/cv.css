@@ -119,6 +119,16 @@ main{
     margin: 50px 0;
     color:  var(--color1);
 }
+#skils p{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
 #skils > div{
     position: relative;
     width: var(--sirina1);
@@ -127,7 +137,8 @@ main{
     border-radius: 50%;
 }
 
-#skils > div > div{
+#skils > div::before, #skils > div::after {
+    content: "";
     position:  absolute;
     top: -20px;
     left: -20px;
@@ -135,90 +146,40 @@ main{
     height:  var(--sirina1);
     border-radius: 50%;
     border: 20px solid #058dda;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;
-    font-weight: 8  00;
     transform: rotate(45deg);
 }
 
-#skils > div:nth-child(5) > div{
+#skils > div:nth-child(5)::before{ 
+    transform: rotate(calc(45deg - 54deg));
     border-color:  var(--color2) var(--color2)  var(--color2)  transparent;
 }
-#skils > div:nth-child(5) > div > div{
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    width: var(--sirina1);
-    height: var(--sirina1);
-    border: 20px solid  gray;
-    border-radius: 50%;
+
+#skils > div:nth-child(5)::after{
+    border: 20px solid  rgb(255, 0, 0);
     border-color: transparent transparent transparent gray;
-    transform: rotate(-64deg);
 }
-#skils p{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.5rem;;
+
+#skils > div:nth-child(4)::before{ 
+    border-color: var(--color2) var(--color2) var(--color2) transparent;
 }
-#skils > div:nth-child(4) > div{
-    border-color:  var(--color2) var(--color2)  var(--color2)  transparent;
-}
-#skils > div:nth-child(4) > div > div{
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    width: var(--sirina1);
-    height: var(--sirina1);
-    border: 20px solid  gray;
-    border-radius: 50%;
+
+#skils > div:nth-child(4)::after{
+    transform: rotate(calc(-45deg + 18deg));
     border-color: transparent transparent transparent var(--color2);
-    transform: rotate(288deg);
 }
-#skils > div:nth-child(4) > div{
-    border-color:  var(--color2) var(--color2)  var(--color2)  transparent;
+#skils > div:nth-child(3)::before, #skils > div:nth-child(2)::before{ 
+    border-color: var(--color2) var(--color2) var(--color2) transparent;
 }
-#skils > div:nth-child(4) > div > div{
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    width: var(--sirina1);
-    height: var(--sirina1);
-    border: 20px solid  gray;
-    border-radius: 50%;
+
+#skils > div:nth-child(3)::after, #skils > div:nth-child(2)::after{
+    transform: rotate(calc(-45deg + 54deg));
     border-color: transparent transparent transparent var(--color2);
-    transform: rotate(288deg);
 }
-#skils > div:nth-child(3) > div, #skils > div:nth-child(2) > div{
-    border-color:  var(--color2) var(--color2)  var(--color2)  transparent;
+#skils > div:nth-child(1)::before{ 
+    border-color: var(--color2) var(--color2) var(--color2) transparent;
 }
-#skils > div:nth-child(3) > div > div, #skils > div:nth-child(2) > div > div{
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    width: var(--sirina1);
-    height: var(--sirina1);
-    border: 20px solid  gray;
-    border-radius: 50%;
+
+#skils > div:nth-child(1)::after{
+    transform: rotate(calc(-45deg + 72deg));
     border-color: transparent transparent transparent var(--color2);
-    transform: rotate(324deg);
-}
-#skils > div:nth-child(1) > div{
-    border-color:  var(--color2) var(--color2)  var(--color2)  transparent;
-}
-#skils > div:nth-child(1) > div > div{
-    position: absolute;
-    top: -20px;
-    left: -20px;
-    width: var(--sirina1);
-    height: var(--sirina1);
-    border: 20px solid  gray;
-    border-radius: 50%;
-    border-color: transparent transparent transparent var(--color2);
-    transform: rotate(342deg);
 }
