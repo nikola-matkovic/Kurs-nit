@@ -3,10 +3,12 @@
     --color1 : #2c3d4d;
     --sirina1 : 200px;
     --color2: #058dda;
+    --font1:  "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 *, *::after, *::before{ 
     padding: 0;
     margin: 0;
+    /* outline: 1px solid red; */
 }
 header{
     width: 100%;
@@ -32,15 +34,6 @@ header h1{
 header h3{
     font-weight: 500;
     font-size: 3rem;
-}
-aside, main{
-    display: inline-flex;
-}
-aside{
-    width: 30%;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
 }
 aside h3{
     background-color: var(--color1);
@@ -78,7 +71,7 @@ aside h3::before{
     left: -75px;
 }
 .about{
-    width: 250px;
+    width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,11 +83,11 @@ aside h3::before{
 .about span:first-child{
     display: block;
     font-weight: 700;
-    width: 40%;
+    width: 35%;
 }
 .about span:last-child{
     display: block;
-    width: 60%;
+    width: 65%;
 }
 .about img{
     width: 30px;
@@ -104,11 +97,7 @@ aside h3::before{
 a{
     text-decoration: none;
 }
-main{
-    width: 70vh;
-}
-
-#skils{
+#skills{
     padding: 0;
     margin: 0;
     width: 100% ;
@@ -119,7 +108,7 @@ main{
     margin: 50px 0;
     color:  var(--color1);
 }
-#skils p{
+#skills p{
     position: absolute;
     width: 100%;
     height: 100%;
@@ -129,7 +118,7 @@ main{
     font-size: 2.5rem;
     font-weight: 600;
 }
-#skils > div{
+#skills > div{
     position: relative;
     width: var(--sirina1);
     height:  var(--sirina1);
@@ -137,7 +126,7 @@ main{
     border-radius: 50%;
 }
 
-#skils > div::before, #skils > div::after {
+#skills > div::before, #skills > div::after {
     content: "";
     position:  absolute;
     top: -20px;
@@ -149,37 +138,85 @@ main{
     transform: rotate(45deg);
 }
 
-#skils > div:nth-child(5)::before{ 
+#skills > div:nth-child(5)::before{ 
     transform: rotate(calc(45deg - 54deg));
     border-color:  var(--color2) var(--color2)  var(--color2)  transparent;
 }
 
-#skils > div:nth-child(5)::after{
+#skills > div:nth-child(5)::after{
     border: 20px solid  rgb(255, 0, 0);
     border-color: transparent transparent transparent gray;
 }
 
-#skils > div:nth-child(4)::before{ 
+#skills > div:nth-child(4)::before{ 
     border-color: var(--color2) var(--color2) var(--color2) transparent;
 }
 
-#skils > div:nth-child(4)::after{
+#skills > div:nth-child(4)::after{
     transform: rotate(calc(-45deg + 18deg));
     border-color: transparent transparent transparent var(--color2);
 }
-#skils > div:nth-child(3)::before, #skils > div:nth-child(2)::before{ 
+#skills > div:nth-child(3)::before, #skills > div:nth-child(2)::before{ 
     border-color: var(--color2) var(--color2) var(--color2) transparent;
 }
 
-#skils > div:nth-child(3)::after, #skils > div:nth-child(2)::after{
+#skills > div:nth-child(3)::after, #skills > div:nth-child(2)::after{
     transform: rotate(calc(-45deg + 54deg));
     border-color: transparent transparent transparent var(--color2);
 }
-#skils > div:nth-child(1)::before{ 
+#skills > div:nth-child(1)::before{ 
     border-color: var(--color2) var(--color2) var(--color2) transparent;
 }
 
-#skils > div:nth-child(1)::after{
+#skills > div:nth-child(1)::after{
     transform: rotate(calc(-45deg + 72deg));
     border-color: transparent transparent transparent var(--color2);
+}
+#cont{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+aside{
+    display: flex;
+    width: 30vw;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+}
+main{
+    position: relative;
+    max-width: 900px;
+    margin-top: 50px;
+
+}
+
+main::before{
+    content: "\201C";
+    position: absolute;
+    display: block;
+    height: 100px;
+    top: -100px;
+    left:-100px;
+    font-family: var(--font1);
+    font-size: 200px;
+}
+main::after{
+    content: "\201D";
+    display: block;
+    height: 100px;
+    position: absolute;
+    bottom: -100px;
+    right: -100px;
+    font-family: var(--font1);
+    font-size: 200px;
+    display: flex;
+    align-items: center;
+}
+main h1{
+    font-size: 4rem;
+}
+main p, li{
+    font-size: 1.2rem;
+    line-height: 2rem;
 }
