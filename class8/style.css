@@ -1,0 +1,19 @@
+div{
+    height: 100px;
+    width: 100px;
+}
+body{
+    font-family: Roboto;
+    font-size: 70px;
+}
+p{
+    text-align: justify;
+    text-transform: lowercase;
+    text-shadow: 3px 3px  px blue;
+    color: red;
+    text-decoration: underline;
+    line-height: 50px;
+    border: 1px solid blue;
+    padding: 10px 0;
+    margin: 0;
+}
