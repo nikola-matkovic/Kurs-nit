@@ -99,19 +99,20 @@ p{
     padding: 10px;
     margin: 10px;
 }
-#projects > div{
+aside > div{
     display: inline-flex;
     max-width: 600px;
     border: 1px solid #ccc;
     font-weight: 300;
 }
-#projects div img{
+aside div img{
     border-radius: 50%;
     width: 100px;
     aspect-ratio: 1;
     object-fit: cover;
     vertical-align: middle;
 }
-#contprojcets{
+aside{
     display: flex;
+    gap: 20px;
 }
