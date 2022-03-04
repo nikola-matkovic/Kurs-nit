@@ -1,22 +1,37 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: roboto;
+    scroll-behavior: smooth;
 }
-nav, ul{
-    font-size: 2rem;
-    background-color: black;
-    height: 100px;
-    width: 100%;
+body{
+    background-color: #e4e4e4;
+}
+nav{
+    position:sticky;
+    top:0;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 120px;
+    padding:0 100px;
+    background-color: black;
     color: white;
+    font-size: 2rem;
 }
-nav ul li{
-    height: 100%;
+#home, #about, #projects{
+    scroll-margin-top: 200px;
+}
+nav ul{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li{
+    display: flex;
     align-items: center;
     padding: 0;
     margin: 0;
@@ -30,9 +45,6 @@ nav ul li a:hover{
 a img {
     width: 100px;
     height: 100px;
-}
-div{
-    padding: 10px;
 }
 #links{
     width: 100%;
