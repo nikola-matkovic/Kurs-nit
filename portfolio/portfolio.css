@@ -31,7 +31,7 @@ nav{
     justify-content: center;
     align-items: center;
     vertical-align: middle;
-    /*transform: translateY(-3px) rotate(-90deg);*/
+    transform: translateY(-3px) rotate(-90deg);
 }
 #home, #about, #projects{
     scroll-margin-top: 200px;
