@@ -20,6 +20,19 @@ nav{
     color: white;
     font-size: 2rem;
 }
+#logo, #logo span{
+    color: rgb(21, 255, 0);
+    font-family: monospace;
+    letter-spacing: 3px;
+    font-weight: lighter;
+}
+#logo span{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    /*transform: translateY(-3px) rotate(-90deg);*/
+}
 #home, #about, #projects{
     scroll-margin-top: 200px;
 }
