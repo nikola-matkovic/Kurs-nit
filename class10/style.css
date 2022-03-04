@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 200vh;
+}
+nav{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    top: 400px;
+    position: fixed;
+}

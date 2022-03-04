@@ -1,0 +1,25 @@
+#cont{
+    width: 50%;
+    height: 400px;
+    display: inline-block;
+    padding: 50px 5%;
+    background-color: gray;
+    box-sizing:border-box;
+    border: 2px solid red;
+}
+#first{
+    width: 30%;
+    height: 100%;
+    background-color: blue;
+    box-sizing:border-box;
+    display: inline-block;
+    font-size: 16px;
+}
+#secound{
+    width: 70%;
+    height: 100%;
+    background-color: rgb(225, 241, 0);
+    box-sizing:border-box;
+    display: inline-block;
+    font-size: 16px;
+}

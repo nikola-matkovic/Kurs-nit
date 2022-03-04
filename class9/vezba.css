@@ -1,0 +1,39 @@
+div{
+    border: 2px solid red;
+    width: 600px;
+    height: 500px;
+    box-sizing: border-box;
+    padding: 20px;
+    position: relative;
+}
+div > div {
+    display: inline-block;
+    position: absolute;
+}
+div > div:nth-child(1){
+    width: 200px;
+    height: 150px;
+    left: 5%;
+}
+div > div:nth-child(2){
+    width: 200px;
+    height: 300px;
+    left: 30%;
+    background-color: white;
+    top: 30%;
+    z-index: 2;
+}
+div > div:nth-child(3){
+    width: 450px;
+    height: 120px;
+    top: 70%;
+    z-index: 3;
+    background-color:white;
+}
+div > div:nth-child(4){
+    background-color: white;
+    z-index: 4;
+    width: 60px;
+    height: 400px;
+    left: 75%;
+}
