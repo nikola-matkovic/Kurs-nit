@@ -1,0 +1,31 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:honeydew;
+}
+#cont{
+    width: 100vmin;
+    height: 100vmin;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+#cont > div{
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    background-color: rgb(224, 139, 139);
+    border: 5px solid red;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20vmin;
+    color: white;
+}
