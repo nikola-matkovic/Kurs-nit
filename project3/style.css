@@ -9,6 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     background-color:honeydew;
+    min-height: 100vh;
 }
 #cont{
     width: 100vmin;
