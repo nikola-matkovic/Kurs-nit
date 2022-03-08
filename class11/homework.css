@@ -1,0 +1,31 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+}
+#cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#cont > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+div#left{
+    width: 40%;
+    justify-content:  flex-end;
+}
+div#right{
+    width: 50%;
+    justify-content:  flex-start;
+}
