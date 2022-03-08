@@ -16,6 +16,11 @@ body{
     top: 50%;
     transform: translateY(-50%);
 }
+@media screen and (max-width: 600px) {
+    #cont{
+        flex-direction: column;
+    }
+}
 #cont > div {
     display: flex;
     align-items: center;
