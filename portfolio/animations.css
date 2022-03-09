@@ -1,0 +1,8 @@
+@keyframes typing{
+    from{
+        --number-of-chars : 1;
+    }
+    to{
+        --number-of-chars: 30;
+    }
+}
