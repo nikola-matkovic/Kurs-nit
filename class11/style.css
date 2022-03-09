@@ -43,3 +43,9 @@ span{
     line-height: 1rem;
     margin: 10px 0;
 }
+@media screen and (max-width: 600px) {
+    #levo, #desno{
+        display: block;
+        width: 100%;
+    }
+}
