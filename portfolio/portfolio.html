@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" defer></script>
 </head>
 <body>
     <nav>
@@ -15,44 +16,78 @@
         </div>
         <ul>
             <li><a href="#home">Home</a></li>
-            <li> <a href="#about">About me</a></li>
-            <li> <a href="#projects">Projects</a> </li>
-            <li><a href="#contact">skills</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="#message">Contact me</a></li>
         </ul>
     </nav>
     <main>
-        <div id="home">
-            <h1 id="about" >I'M Nikola</h1>
-            <p>
-                I became interested in technology in elementary school. I spent a lot of time trying out many technologies and programming languages, but I saw myself as a future fron-tend web developer. This is the area I have paid the most attention to. I enjoy learning new technologies and acquiring new skills. I know the concepts of objectoriented programming such as polymorphism, inheritance and working with modules. 
-            </p> 
-            <button class="btn btn-primary">SEND ME A MESSAGE</button>
-            <button class="btn btn-light">MY PROJECTS</button>
-       </div>
-        <div id="img-container">
-            <img width="200px"  src="cv.png" alt="Moja Slika">
-        </div>
+        <section id="home">
+            <div id="left">
+                <h1 id="about" >Nice to see you here!</h1>
+                <p>HI! I'm Nikola, yong Front-end web developer from Novi Pazar - Serbia</p> 
+                <button class="btn btn-primary">SEND ME A MESSAGE</button>
+                <button class="btn btn-light">MY PROJECTS</button>
+            </div>
+            <div id="right">
+                <img width="200px"  src="cv.png" alt="Moja Slika">
+            </div>
+        </section>
+        <section id="skills">
+            <div class="card">
+                <img src="html.png" alt="html">
+                <div>HTML5</div>
+            </div>
+            <div class="card">
+                <img src="css.png" alt="">
+                <div>CSS3</div>
+            </div>
+            <div class="card">
+                <img src="js.png" alt="">
+                <div>JavaScript</div>
+            </div>
+            <div class="card">
+                <img src="sass.png" alt="">
+                <div>Sass</div>
+            </div>
+            <div class="card">
+                <img src="bootstarp.png" alt="">
+                <div>Bootstrap</div>
+            </div>
+            <div class="card">
+                <img src="react.png" alt="">
+                <div>React</div>
+            </div>
+            <div class="card">
+                <img src="git.png" alt="">
+                <div>GitHub</div>
+            </div>
+            <div class="card">
+                <img src="vscode.png" alt="">
+                <div>Visual Studio Code</div>
+            </div>
+        </section>
+        <section id="projects">
+            <h1>Some of my projects</h1>
+            
+        </section>
+        <section id="contact">
+            <form>
+                <label for="name">Name:</label>
+                <input  id="name" type="text" placeholder="Name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input id="email" type="email" placeholder="Email" required>
+                <br>    
+                <label for="subject">subject:</label>
+                <input id="subject" type="text" placeholder="subject" required>
+                <br> 
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message" required></textarea>  
+                <br> 
+                <button type="submit" style="width: 200px;" class="btn btn-primary">Send</button>
+                <br>
+            </form>
+        </section>
     </main>
-    <section id="projects">
-        <h1>My Projects</h1>
-    </section>
-    <section id="message">
-        <form>
-            <label for="name">Name:</label>
-            <input  id="name" type="text" placeholder="Name" required>
-            <br>
-            <label for="email">Email:</label>
-            <input id="email" type="email" placeholder="Email" required>
-            <br>    
-            <label for="subject">subject:</label>
-            <input id="subject" type="text" placeholder="subject" required>
-            <br> 
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message" required></textarea>  
-            <br> 
-            <button type="submit" style="width: 200px;" class="btn btn-primary">Send</button>
-            <br>
-        </form>
-    </section>
 </body>
 </html> 
