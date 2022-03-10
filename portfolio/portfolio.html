@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nikola Matkovic</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="forma.css">
     <script src="portfolio.js" defer></script>
 </head>
 <body>
@@ -18,7 +20,7 @@
             <li><a href="#home">Home</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#message">Contact me</a></li>
+            <li><a href="#contact">Contact me</a></li>
         </ul>
     </nav>
     <main>
@@ -69,24 +71,63 @@
         </section>
         <section id="projects">
             <h1>Some of my projects</h1>
-            
+            <div id="galery">
+                <div id="left-arrow">
+                    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+                </div>
+                <div class="computer">
+                    <img src="monitor.png" alt="">
+                </div>
+                <div class="phone"></div>
+                <div id="right-arrow">
+                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                </div>
+            </div>
         </section>
         <section id="contact">
-            <form>
-                <label for="name">Name:</label>
-                <input  id="name" type="text" placeholder="Name" required>
-                <br>
-                <label for="email">Email:</label>
-                <input id="email" type="email" placeholder="Email" required>
-                <br>    
-                <label for="subject">subject:</label>
-                <input id="subject" type="text" placeholder="subject" required>
-                <br> 
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter message" required></textarea>  
-                <br> 
-                <button type="submit" style="width: 200px;" class="btn btn-primary">Send</button>
-                <br>
-            </form>
+            <div class="glavni-div">
+                <div class="touch">
+                    <p>Get In Touch</p>
+                </div>
+                <div class="forme">
+                    <table>
+                        <tr>
+                            <td><input type="text" name="name" placeholder="First Name" class="podaci pomeraj"></td>
+                            <td><input type="text" name="name" placeholder="Last Name" class="podaci" id="last"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="name" placeholder="Email" class="podaci pomeraj"></td>
+                            <td><input type="text" name="name" placeholder="Phone" class="podaci" id="phone"></td>
+        
+        
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="name" placeholder="Address" class="podaci pomeraj roki"></td>
+        
+        
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="name" placeholder="Type your message here" class="podaci pomeraj roki"></td>
+        
+                        </tr>
+                    </table>
+                </div>
+                <div class="submit">
+                    <button type="button" name="sumbit" class="btn btn-primary">Submit</button>
+                </div>
+                <div class="thanks">
+                    <p>Thanks for submitting!</p>
+                </div>
+            </div>
+            <div class="social">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
         </section>
     </main>
 </body>

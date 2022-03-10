@@ -10,6 +10,7 @@
     --nav-height: 120px;
 }
 nav{
+    z-index: 2;
     position:sticky;
     top:0;
     display: flex;
@@ -173,7 +174,6 @@ main .btn{
     padding: 100px 0;
     gap: 20px;
     padding: 20px;
-    z-index: -1;
 }
 .card{
     position: relative;
@@ -205,6 +205,49 @@ main .btn{
     letter-spacing: 5px;
 }
 
+#galery{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    padding: 0 100px;
+}
+#left-arrow, #right-arrow{
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    font-size: 5rem;
+    color:rgb(18, 219, 0);
+    width: 100px;
+    height: 100%;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#left-arrow:hover, #right-arrow:hover{
+    background-color: rgba(255,255,255, .1);
+}
+
+#left-arrow{
+    transform: translateX(20px);
+}
+#right-arrow{
+    left: unset;
+    right: 0;
+    transform: translateX(-20px);
+}
+
+#right-arrow:hover{
+    transform: translateX(-20px);
+    transform: translateX(0px);
+}
+#left-arrow:hover{
+    transform: translateX(0px);
+}
+.computer img{
+    width: 500px;
+}
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -219,3 +262,9 @@ main .btn{
     background: linear-gradient(to bottom,  rgb(144, 0, 0), rgb(255, 51, 0), rgb(255, 115, 0));
     border-radius: 10px;
   }
+#contact{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
