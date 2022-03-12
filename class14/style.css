@@ -22,13 +22,14 @@
     bottom: 0;
 }
 .top{
+    padding: 40px 0;
     text-align: center;
 }
 #cont {
     display: grid;
     grid-template-columns:  repeat(2, 1fr);
     gap: 20px;
-    padding: 20px;
+    padding:  0 40px;
 }
 #cont img{
     width: 200px;
@@ -36,7 +37,7 @@
     object-fit: cover;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 960px) {
     #cont{
         grid-template-columns:  repeat(1, 1fr);
     }
