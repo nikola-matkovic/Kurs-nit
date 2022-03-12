@@ -1,0 +1,19 @@
+#parent{
+    background-color: blue;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 20px;
+    justify-content: center ;
+}
+.children{
+    width: 50%;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+.children1{
+    width: 25%;
+    height: 100px;
+    background-color: blueviolet;
+}
