@@ -10,9 +10,13 @@ a, a:hover{
     color: black;
 }
 
+:root{
+    --color1: #5fcf80;
+}
+
 nav{
     width: 100%;
-    height: 70px;
+    height: 73px;
     background-color: white;
     position: sticky;
     top: 0;
@@ -27,7 +31,7 @@ nav ul{
 }
 
 nav ul li {
-    padding: 0 15px;
+    padding: 0 16px;
     display: block;
 }
 nav ul li a{
@@ -35,11 +39,17 @@ nav ul li a{
     font-size: 15px;
     color: #37423b;
     font-weight: 500;
+    transition: all .3s;
 }
+nav ul li a:hover{
+    color: var(--color1);
+}
+
 #logo{ 
-    font-size: 1.8rem;
-    color: #5fcf80;
-    font-weight: bold;
+    font-size: 1.9rem;
+    color: var(--color1);
+    font-weight: 600;
+    letter-spacing: 1px;
 }
 section{
     min-height: 400px;
@@ -61,10 +71,49 @@ section:nth-child(2n+1){
     height: 100%;
     width: 100%;
     font-family: "Open Sans", sans-serif;
-    background-color: #5fcf80; 
+    background-color: var(--color1);
     border-radius: calc( var(--height) / 2);
     padding: 5px 20px;
     color: white;
     font-size: 14px;
     font-weight: normal;
+}
+#hero{
+    height: calc(80vh - 70px);
+    background-image: url(hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.drop-container{
+    background-color: white;
+    opacity: 0;
+    position: absolute;
+    transition: all .4s;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 0 1px black;
+}
+.drop-container > div{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.drop-container > div:first-child{
+    
+}
+.drop-container a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li:hover .drop-container{
+    opacity: 1;
+}
+.drop-drop-container{
+    display: none;
 }
