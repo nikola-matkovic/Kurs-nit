@@ -13,7 +13,6 @@ a, a:hover{
 :root{
     --color1: #5fcf80;
     --color2: #3ac162;
-    --margin: 117px;
 }
 
 nav{
@@ -179,7 +178,7 @@ nav ul li:hover .drop-container{
     max-width: 100vw;
 }
 #secound .left{
-    padding-right: 15px;
+    padding-right: 10px;
 }
 #secound > div{
     display: flex;
@@ -191,10 +190,10 @@ nav ul li:hover .drop-container{
     overflow: hidden;
 }
 #secound .left{
-    width: 52%;
+    width: 50%;
 }
 #secound .right{
-    width: 48%;
+    width: 50%;
 }
 #secound .right img{
     max-width: 100% ;
@@ -264,4 +263,16 @@ nav ul li:hover .drop-container{
     color: var(--color1);
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
+}
+#fourth{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card{
+    flex: 1;
+    width: 20%;
+}
+.green{
+    flex: 2;
 }
