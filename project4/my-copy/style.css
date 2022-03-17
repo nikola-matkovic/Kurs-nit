@@ -12,6 +12,8 @@ a, a:hover{
 
 :root{
     --color1: #5fcf80;
+    --color2: #3ac162;
+    --margin: 245px;
 }
 
 nav{
@@ -77,12 +79,17 @@ section:nth-child(2n+1){
     color: white;
     font-size: 14px;
     font-weight: normal;
+    transition: all .3s;
+}
+#get a:hover{
+    background-color: var(--color2);
 }
 #hero{
     height: calc(80vh - 70px);
     background-image: url(hero-bg.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
 }
 .drop-container{
     background-color: white;
@@ -116,4 +123,57 @@ nav ul li:hover .drop-container{
 }
 .drop-drop-container{
     display: none;
+}
+
+#drop-link-one{
+    display: flex;
+}
+#drop-link-one span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+#hero > div{
+    width: 100%;
+    height: 100%;
+    background-color: rgba( 0, 0, 0, .4);
+    color: white;
+    padding-left: var(--margin);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#hero > div a {
+    color: white;
+}
+#hero > div h1{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 700;
+}
+#hero > div p{
+    padding-top: 10px;
+    font-size: 1.5rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+#hero > div a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    margin: 20px 0;
+    font-size: 15px;
+    font-weight: 500;
+    height: 3rem;
+    border-radius: 1.5rem; 
+    border: 2px solid white;
+    transition: all .3s;
+}
+#hero > div a:hover{
+    background-color: var(--color2);
+}
+#secound{
+    padding: 60px 0;
 }
