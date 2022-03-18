@@ -12,6 +12,7 @@ a, a:hover{
 }
 
 :root{
+    scroll-behavior: smooth;
     --color1: #5fcf80;
     --color2: #3ac162;
 }
@@ -492,11 +493,11 @@ nav ul li:hover .drop-container{
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 0 10px ;
+    padding: 0 20px ;
 }
 #popular .card h3{
     width: 100%;
-    padding: 0 10px;
+    padding: 0 20px;
 }
 #popular .card .line{
     background-color:  rgb(230, 230, 230);
@@ -508,10 +509,74 @@ nav ul li:hover .drop-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 100px;
+    min-height: 80px;
     padding: 10px;
 }
 #popular .card .card-footer svg, #popular .card .card-footer img {
     display: inline-block;
     vertical-align: middle;
+}
+#popular .card .job-cont .job{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: rgb(95, 207, 128);
+    font-family: Raleway, sans-serif;
+    padding: 8px 10px;
+    margin: 5px 0;
+}
+#popular .card .job-cont .price{
+    font-weight: 700;
+    font-size: 18px;
+    color: #37423b;
+    font-family: "Open Sans", sans-serif;
+}
+#popular .card > h3{
+    font-weight: 700;
+    font-size: 20px;
+    font-family: "Raleway", sans-serif;
+    color: #37423b;
+    margin: 5px 0;
+    transition: all .3s;
+    transition-timing-function: ease-in-out;
+}
+#popular .card > p {
+    font-size: 14px;
+    color: #777777;
+    font-family: "Open Sans", sans-serif;
+    padding: 10px 20px;
+    line-height: 1.5rem;
+}
+#popular .card .card-footer span{
+    color: #657a6d;
+}
+#popular .card .card-footer svg{
+    fill: #657a6d;
+    margin-left: 10px;
+}
+#popular .card .left span {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-left: 5px;
+}
+#popular .card h3:hover{
+    color: var(--color1);
+}
+#mentors{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 60px;
+}
+#mentors .card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+#mentors img{
+    width: 100%;
+    border: 2px solid #eee;
 }
