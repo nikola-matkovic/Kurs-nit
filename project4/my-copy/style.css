@@ -272,7 +272,7 @@ nav ul li:hover .drop-container{
     align-items: flex-start;
     justify-content: space-between;
     align-items: center;
-    gap: 30px;
+    gap: 25px;
     min-height: unset;
 }
 #fourth .card{
@@ -469,7 +469,7 @@ nav ul li:hover .drop-container{
 #popular .card-cont{
     display: flex;
     overflow: hidden;
-    gap: 30px;
+    gap: 25px;
 }
 #popular .card {
     width: 33%;
@@ -566,17 +566,54 @@ nav ul li:hover .drop-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    margin-top: 60px;
+    gap: 25px;
+    margin-top: 120px;
 }
 #mentors .card {
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
-
+    border: 2px solid #eee;
 }
 #mentors img{
     width: 100%;
-    border: 2px solid #eee;
+}
+#mentors h4{
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    margin-top: 30px;
+    color: #444;
+}
+#mentors span{
+    font-style:italic;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+}
+#mentors p{
+    padding: 5px 20px;
+    font-style:italic;
+    color: #aaa;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+}
+#mentors  .icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75px;
+    gap: 10px;
+    color:  #7e9486;
+}
+#mentors  .icons svg{
+    width: 18px;
+    height: 18px;
+    transition: all .3s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+}
+#mentors  .icons svg:hover{
+    color: var(--color1);
 }
