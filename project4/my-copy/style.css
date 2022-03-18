@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    --card-size: 370px;
 }
 
 a, a:hover{
@@ -265,14 +266,169 @@ nav ul li:hover .drop-container{
     font-family: "Open Sans", sans-serif;
 }
 #fourth{
+    margin-top: 60px;
+    padding: 0 12px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    min-height: unset;
 }
-.card{
+#fourth .card{
     flex: 1;
     width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.green{
-    flex: 2;
+#fourth .card:not(.green){
+    border: 2px solid rgb(240, 240, 240);
+    overflow: hidden;  
+    min-height: 350px;
+}
+#fourth .green{
+    flex: 1.4;
+    background-color: var(--color1);
+    color: white;
+    padding: 30px;
+    padding-bottom:0;
+    border-radius: 5px;
+    min-height: calc(var(--card-size) + 20px);
+}
+#fourth .svg-cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #ecf9f0;
+}
+#fourth .card:not(.green) svg{
+    width: 40px;
+    height: 40px;
+    fill: var(--color1);
+}
+#fourth .green h1{
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 30px;
+    font-family: "Raleway", sans-serif;
+}
+#fourth .green p{
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+}
+#fourth .green a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+    margin-bottom: 0;
+    color: white;
+    font-size: 1rem;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgba(255, 255, 255, .2);
+    padding: 8px 30px;
+    border-radius: 30px;
+    transition: all .4s;
+    transition-timing-function: ease-in-out;
+}
+#fourth .green a svg{
+    width: 10px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+#fourth .green a:hover{
+    background-color: white;
+    color: var(--color1);
+}
+#fourth .card .svg-cont{
+    margin: 35px 0;
+}
+#fourth .card h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #444;
+    padding: 0 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+#fourth .card:not(.green) p{
+    padding: 0 15px;
+    text-align: center;
+    color: #848484;
+    font-size: 15px;
+}
+#icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 60px;
+    min-height: unset;
+}
+#icons .icon{
+    width: 100%;
+    height: 75px;
+    border: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #37423b;
+    transition: all .3s;
+    transition-timing-function: ease-in-out;
+}
+#icons .icon:hover{
+    border-color: var(--color1);
+    color: var(--color1);
+}
+#icons .icon:nth-child(1) svg{
+    fill: #ffbb2c;
+}
+#icons .icon:nth-child(2) svg{
+    fill: #5578ff;
+}
+#icons .icon:nth-child(3) svg{
+    fill: #e80368;
+}
+#icons .icon:nth-child(4) svg{
+    fill: #e361ff;
+}
+#icons .icon:nth-child(5) svg{
+    fill: #47aeff;
+}
+#icons .icon:nth-child(6) svg{
+    fill: #ffa76e;
+}
+#icons .icon:nth-child(7) svg{
+    fill: #11dbcf;
+}
+#icons .icon:nth-child(8) svg{
+    fill: #4233ff;
+}
+#icons .icon:nth-child(9) svg{
+    fill: #b2904f;
+}
+#icons .icon:nth-child(10) svg{
+    fill: #b20969;
+}
+#icons .icon:nth-child(11) svg{
+    fill: #ff5828;
+}
+#icons .icon:nth-child(12) svg{
+    fill: #29cc61;
+}
+#icons .icon svg{
+    width: 35px;
+    height: 35px;
+    margin: 0 20px;
+}
+#icons .icon span {
+    font-size: 1rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
 }
