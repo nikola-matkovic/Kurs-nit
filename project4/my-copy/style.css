@@ -25,6 +25,7 @@ nav{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    z-index: 1;
 }
 nav ul{
     display: flex;
@@ -106,9 +107,7 @@ section{
     align-items: center;
     justify-content: center;
 }
-.drop-container > div:first-child{
-    
-}
+
 .drop-container a{
     display: block;
     width: 100%;
@@ -431,4 +430,88 @@ nav ul li:hover .drop-container{
     font-size: 1rem;
     font-family: "Raleway", sans-serif;
     font-weight: 700;
+}
+#popular {
+    margin-top: 120px;
+}
+#popular header {
+    margin-bottom: 30px;
+}
+#popular header h2{
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    color: #aaa;
+    overflow: visible;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 2px;
+}
+#popular header h2::after{
+    content: '';
+    display: block;
+    position:  absolute;
+    top: 8px;
+    left: 100%;
+    margin-left: 20px;
+    width: 150px;
+    height: 1px;
+    background-color: #9ae1af;
+    transform: translateY(1px);
+}
+#popular header h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #37423b;
+}
+#popular .card-cont{
+    display: flex;
+    overflow: hidden;
+    gap: 30px;
+}
+#popular .card {
+    width: 33%;
+    border-radius: 5px;
+    border: 2px solid #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#popular .card .img-cont img {
+    object-fit: cover;
+    width: 100%;
+}
+#popular .card .card-footer img {
+    object-fit: cover;
+    width: 50px;
+    border-radius: 50%;
+}
+#popular .card  .job-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px ;
+}
+#popular .card h3{
+    width: 100%;
+    padding: 0 10px;
+}
+#popular .card .line{
+    background-color:  rgb(230, 230, 230);
+    width: 95%;
+    height: 1px;
+}
+#popular .card .card-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    padding: 10px;
+}
+#popular .card .card-footer svg, #popular .card .card-footer img {
+    display: inline-block;
+    vertical-align: middle;
 }
