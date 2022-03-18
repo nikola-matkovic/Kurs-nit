@@ -617,3 +617,16 @@ nav ul li:hover .drop-container{
 #mentors  .icons svg:hover{
     color: var(--color1);
 }
+footer{
+    margin-top: 60px;
+}
+footer #top-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 320px;
+    background-color: #f9faf9;
+}
+footer #top-footer ul li {
+    list-style-type: none;
+}
