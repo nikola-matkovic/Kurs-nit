@@ -14,7 +14,9 @@
 </head>
 <body>
     <?php
+        $header = "Courses";
         include "nav.html";
+        include "description.php";
         include "popular.html";
         include "footer.html";
         include "arrow.html";
