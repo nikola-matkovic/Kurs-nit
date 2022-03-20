@@ -85,17 +85,29 @@
     background-color: var(--color1);
     color: white;
 }
+#price .card {
+    overflow: hidden;
+}
 #price .card .card-top.advenced{
     position: relative;
-    overflow: hidden;
 }
 #price .card .card-top.advenced::after{
     content: "Advenced";
+    width: 200px;
+    height: 25px;
     position: absolute;
     top: 0;
     right: 0;
-    transform-origin: top;
     transform: rotate(45deg);
     background-color: var(--color1);
     color: white;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    top: 16px;
+    padding-bottom: 3px;
+    right: -65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
