@@ -10,7 +10,8 @@
     #description,
     #price,
     #contact .form, 
-    #events{
+    #events,
+    #course-details{
         padding: 0 calc( (100vw - 1320px) / 2) ;
     }
 }                                                                         
