@@ -10,5 +10,8 @@
     <script>
         //window.location.href = "https://anonymousvegan.github.io/Kurs-nit/portfolio/";
     </script>
+    <?php 
+        echo " radi!!! 3+3 = ". 3+3;
+    ?>
 </body>
 </html>

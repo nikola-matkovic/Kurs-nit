@@ -8,13 +8,10 @@
 #contact .form{
     margin-top: 60px;
     width: 100%;
-    height: 360px;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
-    padding: 0 80px ;
-
 }
 #contact .left{
     width: 33%;
@@ -99,7 +96,7 @@
     padding: 10px;
     transition: all .3s;
     transition-timing-function: ease-in-out;
-    resize: none;
+    resize: vertical;
 }
 #contact textarea:focus{
     border: 1px solid  var(--color1);
