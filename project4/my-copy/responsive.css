@@ -9,7 +9,8 @@
     footer #bottom-footer,
     #description,
     #price,
-    #contact .form{
+    #contact .form, 
+    #events{
         padding: 0 calc( (100vw - 1320px) / 2) ;
     }
 }                                                                         

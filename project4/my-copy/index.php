@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="icon" href="favicon.png">
-    <script src="script.js" defer></script>
+    <script src="script.js"  defer></script>
 </head>
 <body>
     <?php
@@ -25,5 +25,10 @@
         include "footer.html";
         include "arrow.html";
     ?>
+    <script>
+        window.onload=()=>{
+            active(1);
+        };
+    </script>
 </body>
 </html>

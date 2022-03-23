@@ -21,5 +21,10 @@
         include "footer.html";
         include "arrow.html";
     ?>
+    <script>
+        window.onload=()=>{
+            active(4);
+        };
+    </script>
 </body>
 </html>

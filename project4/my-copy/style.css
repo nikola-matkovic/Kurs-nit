@@ -8,7 +8,6 @@
 
 a, a:hover{
     text-decoration: none;
-    color: black;
 }
 
 :root{
@@ -53,7 +52,7 @@ nav a.active{
     color: var(--color1);
 }
 
-#logo{ 
+#logo a{ 
     font-size: 1.9rem;
     color: var(--color1);
     font-weight: 600;
@@ -705,6 +704,11 @@ footer #top-footer li{
     margin-top: 15px;
     color: #777;
     font-size: 14px;
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+footer #top-footer li:hover{
+    color: var(--color1);
 }
 footer #top-footer li svg{
     width: 12px;

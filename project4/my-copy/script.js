@@ -12,9 +12,6 @@ window.addEventListener("scroll", () => {
 
 const navLinks = document.querySelectorAll("nav  #links > li > a");
 
-function test(){
-    navLinks.forEach( (link) =>{
-        link.classList.add("active");
-    })
+function active(a){
+    navLinks[a].classList.add("active");
 }
-test();
