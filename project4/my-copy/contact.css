@@ -1,0 +1,128 @@
+.gmap_canvas , iframe{
+    width: 100%;
+    height: 350px;
+}
+.gmap_canvas{
+    margin:  5px 0;
+}
+#contact .form{
+    margin-top: 60px;
+    width: 100%;
+    height: 360px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 80px ;
+
+}
+#contact .left{
+    width: 33%;
+}
+#contact .right{
+    width: 66%;
+}
+#contact .cell {
+    --h: 90px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: var(--h);
+}
+#contact .icon{
+    --h: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ecf9f0;
+    height: var(--h);
+    width: var(--h);
+    border-radius: 50%;
+    margin-right: 20px;
+    color: var(--color1);
+    transition: all .3s;
+    transition-timing-function: ease-in-out;
+}
+#contact  .text h3 {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+}
+#contact  .text address {
+    font-size: 14px;
+    color: #657a6d;
+    font-style: normal;
+    font-family: "Open Sans", sans-serif;
+}
+#contact .icon:hover{
+    background-color: var(--color1);
+    color: white;
+}
+
+#contact .right #flex{
+    display: flex;
+    gap: 30px;
+    
+}
+#contact .right > div{
+    margin-bottom: 20px;
+}
+#contact .right input{
+    display:  block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid rgb(223, 223, 223);
+    outline: 0;
+    padding: 10px;
+    transition: all .3s;
+    transition-timing-function: ease-in-out;
+}
+#contact .right input:focus{
+    border: 1px solid  var(--color1);
+}
+
+#contact .right #flex input{
+    width: 50%;
+}
+#contact .right #flex input[placeholder="subject"]{
+    width: 100%;
+    height: 60px;
+    border-radius: 5px;
+}
+#contact textarea{
+    width: 100%;
+    height: 135px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid rgb(223, 223, 223);
+    padding: 10px;
+    transition: all .3s;
+    transition-timing-function: ease-in-out;
+    resize: none;
+}
+#contact textarea:focus{
+    border: 1px solid  var(--color1);
+}
+
+#contact #btn-cont{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact #btn-cont button{
+    background-color: var(--color1);
+    transition: all .3s;
+    transition-timing-function: ease-in-out;
+    color:white;
+    border-radius: 25px;
+    padding: 15px 50px;
+    border : 0;
+    outline: 0;
+    cursor: pointer;
+}
+#contact #btn-cont button:hover{
+    background-color: var(--color2);
+}
