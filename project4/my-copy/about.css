@@ -1,0 +1,23 @@
+section.slide-show{
+    margin-top: 60px;
+}
+section.slide-show .galery{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+section.slide-show .galery .card{
+    position: relative;
+    width: 50%;
+    border: 2px solid rgb(233, 233, 233)
+}
+
+section.slide-show .galery .card .img-cont img{
+    position: absolute;
+    width: 100px;
+    top: 0;
+    left: 0;
+    transform: translate(-50% , 50px);
+}

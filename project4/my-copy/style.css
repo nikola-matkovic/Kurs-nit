@@ -476,10 +476,10 @@ nav ul li .drop-container #drop-link-two:hover .drop-drop-container{
 #popular {
     margin-top: 120px;
 }
-#popular header {
+#popular header, .slide-show header {
     margin-bottom: 30px;
 }
-#popular header h2{
+#popular header h2, .slide-show header h2{
     display: inline-block;
     position: relative;
     font-size: 14px;
@@ -489,7 +489,7 @@ nav ul li .drop-container #drop-link-two:hover .drop-drop-container{
     font-family: "Poppins", sans-serif;
     letter-spacing: 2px;
 }
-#popular header h2::after{
+#popular header h2::after, .slide-show header h2::after{
     content: '';
     display: block;
     position:  absolute;
@@ -501,7 +501,7 @@ nav ul li .drop-container #drop-link-two:hover .drop-drop-container{
     background-color: #9ae1af;
     transform: translateY(1px);
 }
-#popular header h1{
+#popular header h1, .slide-show header h1{
     font-family: "Poppins", sans-serif;
     font-size: 36px;
     font-weight: 700;
