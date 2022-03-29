@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="animations.css">
     <script src="script.js"  defer></script>
 </head>
 <body>
