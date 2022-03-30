@@ -35,14 +35,13 @@ footer #bottom-footer,
         --padding: 0 calc( (100vw - 90%))
     }
     #secound > div{
-        flex-direction: column-reverse;
+        flex-direction: column-;
         height: auto;
         max-height: unset;
     }
     #secound .left, #secound .right{
         width: 100%;
     }
-    
 }
 
 @media  screen and (min-width: 1500px){
