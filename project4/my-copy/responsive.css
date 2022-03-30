@@ -1,19 +1,55 @@
+:root{
+    --padding : 0;
+}
+nav{
+    justify-content: space-evenly;
+}
+nav,
+#secound > div,
+#fourth,
+#hero > div,
+#icons,
+#popular,
+#mentors,
+footer #top-footer,
+footer #bottom-footer,
+#description,
+#price,
+#contact .form, 
+#events,
+#course-details, 
+.slide-show{
+    padding: var(--padding);
+}
+
+
+
+@media screen and (min-width: 800px) {
+    :root{
+        --padding: 0 calc( (100vw - 95%))
+    }
+}
+
+@media screen and (min-width: 100px) {
+    :root{
+        --padding: 0 calc( (100vw - 90%))
+    }
+    #secound > div{
+        flex-direction: column-reverse;
+        height: auto;
+        max-height: unset;
+    }
+    #secound .left, #secound .right{
+        width: 100%;
+    }
+    
+}
+
 @media  screen and (min-width: 1500px){
-    #nav,
-    #secound > div,
-    #fourth,
-    #hero > div,
-    #icons,
-    #popular,
-    #mentors,
-    footer #top-footer,
-    footer #bottom-footer,
-    #description,
-    #price,
-    #contact .form, 
-    #events,
-    #course-details, 
-    .slide-show{
-        padding: 0 calc( (100vw - 1320px) / 2) ;
+    :root{
+        --padding: 0 calc( (100vw - 1320px) / 2)
+    }
+    nav{
+        justify-content: space-between;
     }
 }                                                                         
