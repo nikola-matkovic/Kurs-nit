@@ -824,3 +824,6 @@ footer #input button:hover{
     width: 28px;
     height: 28px;
 }
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: 1s;
+}
