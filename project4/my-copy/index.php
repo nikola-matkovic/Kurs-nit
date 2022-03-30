@@ -7,10 +7,10 @@
     <title>Mentor Bootstrap Template - Index</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="script.js"  defer></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="icon" href="favicon.png">
+    <script src="script.js"  defer></script>
 </head>
 <body>
     <?php
@@ -32,8 +32,10 @@
         };
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
+    <script>           
+        AOS.init({
+        once: true
+        })
     </script>
 </body>
 </html>
