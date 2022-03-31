@@ -34,15 +34,56 @@ footer #bottom-footer,
     :root{
         --padding: 0 calc( (100vw - 90%))
     }
-    #secound > div{
-        flex-direction: column-;
+}
+
+@media screen and (max-width: 800px) {
+    body{
+        overflow-x: hidden;
+    }
+    #secoud{
+        height: auto;
+        max-width: unset;
+    }
+    #secound div {
+        flex-direction: column-reverse;
+        height: auto;
+        max-height: unset;
+    } 
+    #secound .left, #secound .right  {
+        width: 100%;
+        height: auto;
+        max-width: unset;
+    }
+    #fourth {
+        display: flex;
+        flex-direction: column;
+    }
+    #fourth .card{
+        width: 100%;
+    }
+    #icons{
+        display: flex;
+        flex-direction: column;
+    }
+    #popular > div, #mentors {
+        flex-direction: column;
+    }
+    #popular > div .card, #mentors .card {
+        width: 100%;
+    }
+    footer {
         height: auto;
         max-height: unset;
     }
-    #secound .left, #secound .right{
-        width: 100%;
+    footer #top-footer{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: start;
+        padding-bottom: 30px;
     }
 }
+
 
 @media  screen and (min-width: 1500px){
     :root{
