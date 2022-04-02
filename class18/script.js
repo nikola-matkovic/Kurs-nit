@@ -1,4 +1,7 @@
-const elem = document.querySelector("#addme");
-const paragraph = document.createElement("P");
-paragraph.textContent = "I'm  new paragraph";
-elem.appendChild(paragraph);    
+let counter = 0;
+function count(){
+    console.log("test");
+    var p = document.getElementById("count")
+    counter +=1;
+    p.textContent = counter;
+}
