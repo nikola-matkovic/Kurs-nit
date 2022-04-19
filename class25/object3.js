@@ -5,3 +5,13 @@ nizObjecata.forEach( obj =>{
     console.log(obj);
    }
 })
+
+function findObject(niz, parametar, vrednostParametra){
+    niz.forEach( obj =>{
+        if(obj[parametar] === vrednostParametra){
+         console.log(obj);
+        }
+     })
+}
+
+findObject(nizObjecata, "name", "rijad")
