@@ -2,7 +2,7 @@ function largestOfFour(arr) {
     let number =  Math.max(...arr.map( subArr => (Math.max(...subArr))))
     arr.forEach((subArr) => {
         if(subArr.indexOf(number) != -1){
-            console.log(subArr) ///Pitati suada;
+            //console.log(subArr) ///Pitati suada;
             return subArr;
         }
     })
