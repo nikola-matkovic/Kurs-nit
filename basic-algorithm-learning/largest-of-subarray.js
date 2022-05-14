@@ -1,10 +1,9 @@
 function largestOfFour(arr) {
     let number =  Math.max(...arr.map( subArr => (Math.max(...subArr))))
-    let index;
-    arr.forEach((subArr, index) => {
+    arr.forEach((subArr) => {
         if(subArr.indexOf(number) != -1){
             console.log(subArr) ///Pitati suada;
-            return arr;
+            return subArr;
         }
     })
 }
