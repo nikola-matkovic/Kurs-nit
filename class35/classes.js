@@ -13,6 +13,7 @@ class Animal {
 class Wolf extends Animal {
     constructor(name, age, alpha = false){
         super(name, age)
+        alpha = alpha
     }
     roar () {
         return "auuuuuu!";
@@ -21,6 +22,5 @@ class Wolf extends Animal {
         return "where is my meat"
     }
 }
-const  = new Animal( "ire", 25);
-const wolf = new Wolf("Škabo", )
-console.log(animalObj)
+const wolf = new Wolf("Nikola",  19, true)
+console.log(wolf)
