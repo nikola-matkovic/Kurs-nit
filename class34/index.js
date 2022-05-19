@@ -6,7 +6,6 @@ const randomQuoteFromAuthor = async (author) => {
     if (!checkedAuthor) {
       return "That author doesn't exist";
     }
-
     const response = await fetch(
       `https://api.quotable.io/random${
         checkedAuthor ? `?author=${checkedAuthor}` : ""
@@ -36,16 +35,39 @@ const authorCheck = async (author) => {
   }
 };
 
-const getQuotes = async (page, sortBy, order) => {
+const createAdress = (...args) => {
+    let address = `https://api.quotable.io/quotes`
+    if(args.length === 0) {
+        return address
+    }
+    address += `?`;
+    let separator =  "&"
+    let i = 0
+    while(1){
+        if(args[i]  === undefined){
+            console.log(address)
+            return address;
+        }
+        if( i == 0){
+            address += `page=${args[i]}`
+        }
+        else if( i == 1){
+            if(args[i] === "dateAdded" || args[i] === "dateModified" || args[i] === "author" || args[i] === "content" ){
+                address += `${separator}sortBy=${args[i]}`
+            }
+        }
+        else if(i == 2){
+            if(args[i] === "asc" || args[i] == "desc"){
+                address += `${separator}order=${args[i]}`
+            }
+        }
+        i++;
+    }
+}
+const getQuotes = async (...args) => {
   try {
-    const paramsExist = page || sortBy || order;
-    const response = await fetch(
-      `https://api.quotable.io/quotes${paramsExist ? "?" : ""}${
-        page ? `page=${page}` : ""
-      }${page ? "&" : ""}${sortBy ? `sortBy=${sortBy}` : ""}${
-        page || sortBy ? "&" : ""
-      }${order ? `order=${order}` : ""}`
-    );
+    const address = createAdress(...args)
+    const response = await fetch(address);
     const result = await response.json();
     return result.results;
   } catch (error) {
@@ -53,9 +75,8 @@ const getQuotes = async (page, sortBy, order) => {
   }
 };
 
-getQuotes(95, "content", "desc").then((result) => {
-  for (let i = 0; i < result.length; i++) {
-    const element = result[i];
-    console.log(element.content + " by: " + element.author);
-  }
-});
+getQuotes(2, "author", "desc").then( (value) => {
+    value.forEach( ( res) => {
+        console.log(`${res.content}     by: ${res.author}`)
+    })
+})
