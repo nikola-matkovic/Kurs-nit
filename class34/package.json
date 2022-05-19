@@ -1,12 +1,12 @@
 {
-  "name": "class34",
+  "name": "class-34",
   "version": "1.0.0",
-  "description": "za bota",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "nikola",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "node-fetch": "^2.6.7"
