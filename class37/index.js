@@ -10,3 +10,15 @@ const strings =  array.filter( value =>  {return  value.address.number > 25 }).m
 
 console.log(strings)
 
+Array.prototype.newMap = function (callback) {
+    const arr = this;
+    const newArray = [];
+    for (let i = 0; i < array.length; i++ ){
+        newArray.push(callback(array[i], i, this))
+    }
+    return newArray;
+}
+
+const strings2 =  array.filter( value =>  {return  value.address.number > 25 }).newMap(value =>   value.address)
+
+console.log(strings2)
