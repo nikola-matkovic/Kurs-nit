@@ -19,6 +19,6 @@ Array.prototype.newMap = function (callback) {
     return newArray;
 }
 
-const strings2 =  array.filter( value =>  {return  value.address.number > 25 }).newMap(value =>   value.address)
+const strings2s =  array.filter( value =>  {return  value.address.number > 25 }).newMap(value =>   value.address)
 
 console.log(strings2)
