@@ -1,4 +1,4 @@
-Array.prototype.newFilter = function (callback){
+Array.prototype.newSome = function (callback){
     arr = this
     for(let i = 0; i < arr.length; i++){
         element = arr[i];
@@ -10,5 +10,5 @@ Array.prototype.newFilter = function (callback){
 }
 
 let a = [1,2,3,4,5,6,7,8,9,10,11]
-let b = a.some(value => value % 10 === 0)
+let b = a.newSome(value => value % 12 === 0)
 console.log(b)
