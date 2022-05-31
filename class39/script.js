@@ -63,17 +63,18 @@ const getQuotes = async (page = 1) => {
     return div;
   };
   
-  getQuotes().then((result) => {
-    result.forEach((quote) => {
-      const newCard = createCardNode(quote.author, quote.content);
-      contentDiv.appendChild(newCard);
-    });
-  });
-  const button = document.getElementById("button");
+  // getQuotes().then((result) => {
+  //   result.forEach((quote) => {
+  //     const newCard = createCardNode(quote.author, quote.content);
+  //     contentDiv.appendChild(newCard);
+  //   });
+  // });
+  // const button = document.getElementById("button");
 
   button.addEventListener("click", load)
   function load(){
-    page ++;
+    page  = parseInt(document.getElementById("page-number").value)
+    contentDiv.innerHTML = ""
     getQuotes(page).then((result) => {
       result.forEach((quote) => {
         const newCard = createCardNode(quote.author, quote.content);
