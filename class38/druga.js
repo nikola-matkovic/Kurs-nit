@@ -4,6 +4,14 @@ const lastInput= document.querySelector("#last")
 const passwordInput= document.querySelector("#password")
 const birthInput = document.querySelector("#birth")
 
+const valid = (input, errorId) =>{
+    let valid = false;
+    const exist = isEmpty(input, errorId){
+        
+    }
+}
+
+
 const exist = (input, errorId) => {
     if(input.value === ""){
         document.getElementById(errorId).textContent = "please insert something"
