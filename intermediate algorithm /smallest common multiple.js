@@ -1,20 +1,26 @@
 function smallestCommons(arr) {
-    a = arr[0];
-    b = arr[1];
-    scm = 1;
-    i = 2;
-    while (a != 1 && b != 1) {
-        while( a % i == 0 || b % i == 0){
+    let first = arr[0];
+    let last = arr[1];
+    if(first > last){
+        [first, last] = [last, first];
+    }
+    let newArray = [];
+    for(let i = first; i <= last; i++){
+        newArray.push(i)        
+    }
+    let scm = 1;
+    let i = 2;
+    while (newArray.some( value => value != 1)) {
+        while( newArray.some( value => value % i == 0))  {
             scm *= i;
-            if(a % i == 0){
-                a /= i;
-            }
-            if(b % i == 0){
-                b /= i;
-            }
+            newArray.forEach( (value, index) => {
+                if(value % i == 0){
+                    newArray[index] = value / i;
+                }
+            })
         }
         i++;
     }
     return scm;
 }
-console.log(smallestCommons([9,12]));
+console.log(smallestCommons([10,12]));
