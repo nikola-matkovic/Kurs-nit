@@ -3,7 +3,7 @@ function sumPrimes(num) {
     let prime;
     for(let i = 2; i <= num; i++) {
         prime = true;
-        for(let j = 2; j < i ; j++) {
+        for(let j = 2; j <= Math.sqrt(i) ; j++) {
             if(i % j == 0){
                 prime = false;
                 break;
