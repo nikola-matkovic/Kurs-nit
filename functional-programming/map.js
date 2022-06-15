@@ -113,6 +113,6 @@ const watchList = [
   ];
   
   // Only change code below this line
-const ratings = watchList.map(  (value) => { return  {Title: value.Title, rating: value.imdbRating};   }       )
+const ratings = watchList.map(  (value) => { return  {title: value.Title, rating: value.imdbRating};   }       )
   
 console.log(JSON.stringify(ratings));
