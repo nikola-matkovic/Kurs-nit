@@ -1,24 +1,32 @@
 const currencyUnit = {
-    "ONE HUNDRED": 100,
-    TWENTY: 20,
-    TEN: 10,
-    FIVE: 5,
-    DOLAR: 1,
-    QUARTER: 0.25,
-    DIME: 0.1,
-    NICKEL: 0.05,
-    PENNY: 0.01
+    "ONE HUNDRED": 10000,
+    TWENTY: 2000,
+    TEN: 1000,
+    FIVE: 500,
+    ONE: 100,
+    QUARTER: 25,
+    DIME: 10,
+    NICKEL: 5,
+    PENNY: 1
 }
 
 function checkCashRegister(price, cash, cid) {
-    let kusur = cash - price;
+    let kusur = (cash - price) * 100;
     let temp;
     let finalObj = {status: "OPEN", change : []};
     //transoform cid to object
     let cidObject = {}
+    let cidValue = 0;
     cid.forEach((value) => {
-        cidObject[value[0]] = value[1];
+        cidObject[value[0]] = value[1] * 100;
+        cidValue += value[1] * 100;
     })
+    if(cidValue < kusur ){
+        return {status: "INSUFFICIENT_FUNDS", change : []}
+    }
+    if(cidValue == kusur) {
+        finalObj.status = "CLOSED";
+    }
     for(let i in currencyUnit){
         temp = 0;
         while(kusur >= currencyUnit[i] && cidObject[i] >= currencyUnit[i]){
@@ -27,37 +35,19 @@ function checkCashRegister(price, cash, cid) {
             cidObject[i] -= currencyUnit[i];
         }
         if(temp){
-            finalObj.change.push([i, temp])
+            finalObj.change.push([i, temp / 100])
+        }
+        else if(cidValue == kusur){
+            finalObj.change.push([i, 0])
         }
     }
+    if(kusur > 0){
+        return {status: "INSUFFICIENT_FUNDS", change : []}
+    }
+    if(finalObj.status == "CLOSED"){
+        finalObj.change.reverse();
+    } 
     return finalObj;
 }
 
-console.log(checkCashRegister(19.5,
-    20,
-    [   ["PENNY", 1.01],
-        ["NICKEL", 2.05],
-        ["DIME", 3.1],
-        ["QUARTER", 4.25], 
-        ["ONE", 90], 
-        ["FIVE", 55], 
-        ["TEN", 20], 
-        ["TWENTY", 60], 
-        ["ONE HUNDRED", 100]
-    ]));
-// {status: "OPEN", change: [["QUARTER", 0.5]]}
-
-
-// console.log(checkCashRegister(3.26,
-//     100,
-//     [   ["PENNY", 1.01], 
-//         ["NICKEL", 2.05], 
-//         ["DIME", 3.1], 
-//         ["QUARTER", 4.25], 
-//         ["ONE", 90], 
-//         ["FIVE", 55], 
-//         ["TEN", 20], 
-//         ["TWENTY", 60], 
-//         ["ONE HUNDRED", 100]
-//     ]))
-// {status: "OPEN", change: [["TWENTY", 60], ["TEN", 20], ["FIVE", 15], ["ONE", 1], ["QUARTER", 0.5], ["DIME", 0.2], ["PENNY", 0.04]]}
+console.log(checkCashRegister(19.5, 20, [["PENNY", 0.5], ["NICKEL", 0], ["DIME", 0], ["QUARTER", 0], ["ONE", 0], ["FIVE", 0], ["TEN", 0], ["TWENTY", 0], ["ONE HUNDRED", 0]]))
