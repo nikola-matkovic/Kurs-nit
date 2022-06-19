@@ -1,3 +1,5 @@
 let waldoIsHiding = "Somewhere Waldo is hiding in this text.";
-let waldoRegex = /kevin/; // Change this line
+let waldoRegex = /Waldo/; // Change this line
 let result = waldoRegex.test(waldoIsHiding);
+waldoIsHiding =   waldoIsHiding.replace(waldoRegex, "Nikola")
+console.log(result, waldoIsHiding);
