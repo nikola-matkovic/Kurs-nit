@@ -1,17 +1,16 @@
-function sumFibs(num) {
-    let first = 1;
-    let secound = 1;
-    let sum = 2;
-    let temp = 0;
-    while(first + secound <= num) {
-        temp = first + secound;
-        first = secound;
-        secound = temp;
-        console.log(temp)
-        if(temp % 2 == 1){
-            sum += temp;
-        }
+function fiboEvenSum(num) {
+    let prew = 1;
+    let prewPrew = 1;
+    let temp;
+    let sum = 0;
+    while(prew <= num) {
+      temp = prew;
+      prew = prew + prewPrew;
+      prewPrew = temp;
+      if(prew % 2 == 0){
+        sum += prew;
+      }
     }
     return sum;
 }
-console.log(sumFibs(75025));
+console.log(fiboEvenSum(10));
