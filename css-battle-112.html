@@ -1,0 +1,26 @@
+<div></div>
+<style>
+  body{
+    background: #6592CF;
+    display: flex;
+    justify-content : center;
+  }
+  div {
+    position: absolute;
+    width: 150px;
+    aspect-ratio: 1;
+    transform: rotate(45deg);
+    border-bottom: 25px solid #293D7E;
+    border-right: 25px solid #293D7E;
+    top: -50px;
+  }
+  div::after{
+    content:" test";
+    width: 50px;
+    height: 50px;
+    background: red;
+    display: block;
+    position: relative;
+    z-index: 2;
+  }
+</style>
