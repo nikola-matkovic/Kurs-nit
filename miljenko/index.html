@@ -1,0 +1,35 @@
+<!doctype html>
+  <html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://projects.lukehaas.me/scrollify/script/jquery.scrollify.js" ></script>
+      <script>
+        $(function() {
+          $.scrollify({
+            section : ".example-classname",
+            sectionName : "section-name",
+            interstitialSection : "",
+            easing: "easeOutExpo",
+            scrollSpeed: 1100,
+            offset : 0,
+            scrollbars: true,
+            standardScrollElements: "",
+            setHeights: true,
+            overflowScroll: true,
+            updateHash: true,
+            touchScroll:true,
+            before:function() {},
+            after:function() {},
+            afterResize:function() {},
+            afterRender:function() {}
+          });
+        });
+      </script>
+    </head>
+    <body>
+      <div class="example-classname">
+      </div>
+      <div  class="example-classname"></div>
+    </body>
+  </html>
